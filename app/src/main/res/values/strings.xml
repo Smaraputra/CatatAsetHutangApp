@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MODUL PENCATATAN ASET DAN HUTANG</string>
+    <string name="buka">bukadrawer</string>
+    <string name="tutup">tutupdrawer</string>
+    <string name="headernavbar">Modul Pencatatan Aset dan Hutang</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

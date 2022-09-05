@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:gravity="center"
+                android:text="Pencatatan Aset dan Hutang"
+                android:textColor="@color/biru_tua"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/biru_tua"
+                android:padding="5dp"
+                android:text="Periode Laporan:"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/biru_tua"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinnerPeriode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recylerviewaset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/showkosong"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="#ECECEC"
+                android:gravity="center"
+                android:text="- Aset dan Hutang Kosong -"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/tomboltambahasetpadaperiode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/biru_tua"
+                android:drawableLeft="@drawable/ic_baseline_control_point_24"
+                android:gravity="center|left"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Tambah Aset"
+                android:textColor="@color/white"
+                app:cornerRadius="3dp"
+                app:strokeColor="@color/biru_tua"
+                app:strokeWidth="2dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
